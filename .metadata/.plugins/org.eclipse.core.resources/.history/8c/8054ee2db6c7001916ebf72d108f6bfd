@@ -1,0 +1,12 @@
+package com.biz.loop;
+
+public class Loop_02 {
+
+	public static void main(String[] args) {
+
+		int nCount = 3;
+		
+		System.out.printf("%d x %d = %d\n", nCount,3, nCount++ * 3);
+	}
+
+}

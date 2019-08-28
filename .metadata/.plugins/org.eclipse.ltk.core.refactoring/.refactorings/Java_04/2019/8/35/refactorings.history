@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.biz.loop.Loop_13&apos; to &apos;Loop_13_GuguDan&apos;&#x0D;&#x0A;- Original project: &apos;Java_04&apos;&#x0D;&#x0A;- Original element: &apos;com.biz.loop.Loop_13&apos;&#x0D;&#x0A;- Renamed element: &apos;com.biz.loop.Loop_13_GuguDan&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Loop_13&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.biz.loop{Loop_13.java[Loop_13" matchStrategy="1" name="Loop_13_GuguDan" qualified="false" references="true" similarDeclarations="false" stamp="1566804725115" textual="false" version="1.0"/>
+</session>

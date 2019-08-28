@@ -1,0 +1,19 @@
+package com.biz.loop;
+
+public class Loop_02 {
+
+	public static void main(String[] args) {
+
+		int nCount = 3;
+		
+		System.out.printf("%d x %d = %d\n", nCount, 1, (nCount++ * 3));
+		System.out.printf("%d x %d = %d\n", nCount, 2, (nCount++ * 3));
+		System.out.printf("%d x %d = %d\n", nCount, 3, nCount++ * 3);
+		System.out.printf("%d x %d = %d\n", nCount, 4, nCount++ * 3);
+		System.out.printf("%d x %d = %d\n", nCount, 5, nCount++ * 3);
+		System.out.printf("%d x %d = %d\n", nCount, 6, nCount++ * 3);
+		System.out.printf("%d x %d = %d\n", nCount, 7, nCount++ * 3);
+		System.out.printf("%d x %d = %d\n", nCount, 8, nCount++ * 3);
+	}
+
+}

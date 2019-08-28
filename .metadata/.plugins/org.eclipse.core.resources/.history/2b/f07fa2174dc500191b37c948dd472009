@@ -1,0 +1,54 @@
+package com.biz.var;
+
+public class Print_02 {
+	
+	public static void main(String[] args) {
+		
+		int num1 = 30;
+		int num2 = 40;
+		
+		System.out.println(num1 + "+" + num2 + "=" + num1 + num2);
+		
+		/*
+		 * 출력을 30+40=70 형식으로 보고 싶으면 먼저 num1과num2를
+		 * 계산하여 변수에 저장해 두고 그 결과를 덧셈 연산을 수행한다
+		 */
+		int sum = num1 + num2;   
+				/*
+				 * 별도로 변수를 사용하지 않고
+				 * 30+40=70으로 보고 보고 싶으면
+				 * 마지막 결과인 30+40 계산식을 괄호로 묶어서
+				 * 연산 우선 순위를 높이는 방법도 있다
+				 */
+		System.out.println(num1
+				+ "+"
+				+ num2
+				+ "="
+				+ num1 + num2);
+		
+		System.out.println(num1
+				+ "*"
+				+ num2
+				+ "="
+				+ num1 * num2);
+		
+		System.out.println(num1
+				+ "－"
+				+ num2
+				+ "="
+				+ num1 － num2);
+		
+		System.out.println(num1
+				+ "÷"
+				+ num2
+				+ "="
+				+ num1 / num2);
+		
+		System.out.println(num1
+				+ "%"
+				+ num2
+				+ "="
+				+ num1 % num2);
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.biz.var;
+
+public class FloaVar_01 {
+
+	public static void main(String[] args) {
+		
+		// 실수형
+		float fNum1 = 30.0f;
+		
+		System.out.println(fNum1);
+		
+
+	}
+
+}

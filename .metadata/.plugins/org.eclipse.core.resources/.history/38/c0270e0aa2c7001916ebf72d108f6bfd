@@ -1,0 +1,27 @@
+package com.biz.var;
+
+public class Var_09 {
+
+	public static void main(String[] args) {
+
+		int nCount = 0;
+		char cA = 'A';
+		
+		nCount = nCount + 1;
+		cA = (char)(cA + 1);
+		nCount = nCount + 1;
+		cA = (char)(cA + 1);
+		nCount = nCount + 1;
+		cA = (char)(cA + 1);
+		nCount = nCount + 1;
+		cA = (char)(cA + 1);
+		nCount = nCount + 1;
+		cA = (char)(cA + 1);
+		nCount = nCount + 1;
+		cA = (char)(cA + 1);
+		
+		System.out.printf("A를 이후 %d 증가했더니 %c 이다.", 
+				nCount, cA);
+	}
+
+}

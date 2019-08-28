@@ -1,0 +1,22 @@
+package com.biz.classes;
+
+public class String_03 {
+
+	public static void main(String[] args) {
+
+		//문자열의 길이를 확인하여 변수 intLengh 저장
+		String strNation = "Republic of Korea";
+		int intLength = strNation.length();
+		char cSearch = 'u';
+		int index = 0;
+		
+		
+		
+		char cA = strNation.charAt(index);
+		if(cA == cSearch)
+			System.out.println(index + "번 위치에 있음");
+	
+		
+	}
+
+}

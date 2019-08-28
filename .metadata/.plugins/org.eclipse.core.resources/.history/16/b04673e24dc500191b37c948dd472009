@@ -1,0 +1,15 @@
+package com.biz.var;
+
+public class IntVarriabale {
+
+	public static void main(String[] args) {
+		
+		int intNum = 30; // 기본정수, 최대 4 byte
+		long longNum = 30L; // 확장정수, 최대 8byte
+		
+		float fNum = 30.0f; // 소수점이하 6자리
+		double dNum = 30.0; // 소수점이하 16자리
+
+	}
+
+}

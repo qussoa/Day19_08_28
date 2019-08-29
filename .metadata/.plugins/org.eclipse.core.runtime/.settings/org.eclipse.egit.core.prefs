@@ -1,3 +1,3 @@
-GitRepositoriesView.GitDirectories=C\:\\bizwork\\javaworks\\HelloProject\\.git;
-GitRepositoriesView.GitDirectories.relative=HelloProject\\.git;
+GitRepositoriesView.GitDirectories=C\:\\bizwork\\javaworks\\.git;C\:\\bizwork\\javaworks\\HelloProject\\.git;
+GitRepositoriesView.GitDirectories.relative=.git;HelloProject\\.git;
 eclipse.preferences.version=1

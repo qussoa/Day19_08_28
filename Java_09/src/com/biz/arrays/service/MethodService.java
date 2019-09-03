@@ -1,5 +1,8 @@
 package com.biz.arrays.service;
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class MethodService {
 
 	private int intSum;
@@ -54,6 +57,10 @@ public class MethodService {
 	public void add(float f1, float f2) {
 		float sum = f1 + f2;
 		System.out.printf("두 실수의 합 : " , sum);
+	}
+	public void ex() {
+		Scanner scan = new Scanner(System.in);
+		Random rnd = new Random();
 	}
 	
 }

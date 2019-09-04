@@ -15,4 +15,6 @@
 <fullyQualifiedTypeName name="com.biz.arrays.service.MethodService"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="com.biz.grade.service.GradeVoService"/>
+<fullyQualifiedTypeName name="java.lang.Character"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

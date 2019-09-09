@@ -45,6 +45,7 @@ public class GradeServiceImp_01 implements GradeService {
 		
 		int nSize = gradeList.size();
 		for(int i = 0; i < nSize; i++) {
+			
 			int total = gradeList.get(i).intKor;
 			total += gradeList.get(i).intEng;
 			total += gradeList.get(i).intMath;

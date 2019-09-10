@@ -15,12 +15,20 @@
 <fullyQualifiedTypeName name="com.biz.grade.service.GradeVoService"/>
 <fullyQualifiedTypeName name="java.lang.Character"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
 <fullyQualifiedTypeName name="com.biz.list.service.BookServiceImpV2"/>
 <fullyQualifiedTypeName name="com.biz.list.service.IolistServiceImp"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.biz.iolist.service.IolistServiceImpV2"/>
 <fullyQualifiedTypeName name="com.biz.iolist.service.IolistService"/>
 <fullyQualifiedTypeName name="com.biz.iolist.model.IolistVO"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="com.biz.grade.GradeVO"/>
+<fullyQualifiedTypeName name="com.biz.grade.ScoreVO"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="com.biz.string.StringService"/>
+<fullyQualifiedTypeName name="com.biz.string.service.StudentServiceV1"/>
+<fullyQualifiedTypeName name="com.biz.string.service.StringService"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.biz.string.domain.ScoreVO"/>
 </qualifiedTypeNameHistroy>

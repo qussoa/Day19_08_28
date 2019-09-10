@@ -21,7 +21,7 @@ public class TotalServiceImp implements TotalService {
 		GradeVO gVO = new GradeVO();
 		ScoreVO sVO = new ScoreVO();
 		for (int i = 0; i < size; i++) {
-			if (gradeList.get(i).getStrNum().equalsIgnoreCase(gVO.getStrName()));
+			if (gradeList.get(i).getStrNum().equalsIgnoreCase(gVO.getStrNum()));
 				
 				break;
 		}

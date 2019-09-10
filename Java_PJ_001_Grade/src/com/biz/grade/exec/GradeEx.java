@@ -10,17 +10,15 @@ import com.biz.grade.service.TotalServiceImp;
 public class GradeEx {
 public static void main(String[] args) {
 	//GradeService gs = new GradeServiceImp();
-	//ScoreService ss = new ScoreServiceImp();
+	ScoreService ss = new ScoreServiceImp();
 	//gs.input(2);
 	//gs.list();
 	
-	//ss.input(3);
-	//ss.total();
-	//ss.list();
+	ss.input(10);
+	ss.total();
+	ss.rank();
 	
-	TotalService ts = new TotalServiceImp();
+	ss.list();
 	
-	ts.input(2);
-	ts.view();
 }
 }

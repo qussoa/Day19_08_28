@@ -10,4 +10,8 @@
 <typeInfo handle="=Java_15_SpringList/src&lt;com.biz.string.service{StringService.java[StringService" modifiers="513" timestamp="1568077868336"/>
 <typeInfo handle="=Java_15_SpringList/C:\/Program Files\/Java\/jre1.8.0_221\/lib\/rt.jar&lt;javax.xml.stream(StreamFilter.class[StreamFilter" modifiers="1537" timestamp="1566274774771"/>
 <typeInfo handle="=Java_15_SpringList/src&lt;com.biz.string.service{ScoreServiceV1.java[ScoreServiceV1" modifiers="1" timestamp="1568083213916"/>
+<typeInfo handle="=Java_18_FileReader/src&lt;com.biz.files.service{FileGradeService.java[FileGradeService" modifiers="513" timestamp="1568772183487"/>
+<typeInfo handle="=Java_18_FileReader/C:\/Program Files\/Java\/jre1.8.0_221\/lib\/rt.jar&lt;java.awt.peer(FileDialogPeer.class[FileDialogPeer" modifiers="1537" timestamp="1566274774771"/>
+<typeInfo handle="=Java_18_FileReader/src&lt;com.biz.files.service{FileGradeServiceV1.java[FileGradeServiceV1" modifiers="1" timestamp="1568773917924"/>
+<typeInfo handle="=Java_19_Iolist/src&lt;com.biz.iolist.service{IolistService.java[IolistService" modifiers="513" timestamp="1568784182520"/>
 </typeInfoHistroy>

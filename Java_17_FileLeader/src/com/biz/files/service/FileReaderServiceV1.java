@@ -18,7 +18,7 @@ public class FileReaderServiceV1 {
 		while(true) {
 			int al = fileReader.read();
 			if(al < 0) break;
-			System.out.printf("%5 : %c\n",al, al);
+			System.out.printf("%05d : %c\n",al, al);
 	
 		}
 			}

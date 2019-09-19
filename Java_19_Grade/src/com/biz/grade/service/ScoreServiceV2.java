@@ -16,11 +16,11 @@ import com.biz.grade.domain.ScoreVO;
 import com.biz.grade.domain.StudentVO;
 import com.biz.grade.utill.ScoreIDX;
 
-public class ScoreServiceV1 {
+public class ScoreServiceV2 {
 
 	private Map<String, ScoreVO> scList;
 
-	public ScoreServiceV1() {
+	public ScoreServiceV2() {
 		scList = new TreeMap<String, ScoreVO>();
 	}
 
@@ -57,13 +57,9 @@ public class ScoreServiceV1 {
 	}
 
 	public void list() {
-		/*
-		 * Collections 자료형의 반복문을 도와주는 class Iterator를 사용하면 while() 반복문을 사용하여 리스트를 처리할 수
-		 * 있다
-		 */
-
-		Set<String> _s = scList.keySet(); // key들을 추출 Set list 생성
-		Iterator<String> _list = scList.keySet().iterator();// Set list -> Iterator형으로 변환
+	
+		Set<String> _s = scList.keySet();
+		Iterator<String> _list = scList.keySet().iterator();
 
 		System.out.println("===================================");
 		System.out.println("성적일람표");
@@ -112,15 +108,24 @@ public class ScoreServiceV1 {
 	}// listTotal end
 
 	public void rank() {
-		List<Map.Entry<String, ScoreVO>> sortList = new LinkedList<Map.Entry<String, ScoreVO>>(scList.entrySet());
+		/*
+		 * 1. Map 데이터에서 value 전체를 추출 list(sortList) 변환
+		 * 2. Map<String, ScoreVO> type으로 데이터를 가지고 있는
+		 *    scList값을 list type인 soreList로 변환
+		 * 3. generic list<generic> : list 가 어떤 type의 데이터들을
+		 * 	  가지고 있을것인가를 명시
+		 * 4. Map 형태를 List로 변환시킬때는 List<Map.Entry<>> 형태로 선언
+		 */
+		List<Map.Entry<String, ScoreVO>> sortList 
+		= new LinkedList<Map.Entry<String, ScoreVO>>(scList.entrySet());
 
-		sortList = new LinkedList<>(scList.entrySet());
-
+		
 		Collections.sort(sortList, new Comparator<Map.Entry<String, ScoreVO>>() {
 
 			@Override
 			public int compare(Entry<String, ScoreVO> o1, Entry<String, ScoreVO> o2) {
-				
+				// o2.getValue()
+				// list 형태로 바뀐 Map에서 VO를 추출하는 method
 				return  o2.getValue().getSumScore() - o1.getValue().getSumScore();
 			}
 		});

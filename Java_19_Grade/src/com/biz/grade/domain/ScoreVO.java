@@ -16,6 +16,15 @@ public class ScoreVO {
 		// TODO Auto-generated constructor stub
 	}
 	 
+	public ScoreVO(String num, int korScore, int engScore, int mathScore) {
+		super();
+		this.num = num;
+		this.korScore = korScore;
+		this.engScore = engScore;
+		this.mathScore = mathScore;
+		}
+	
+	
 	public ScoreVO(String num, int korScore, int engScore, int mathScore, int sumScore, float average, int rank) {
 		super();
 		this.num = num;

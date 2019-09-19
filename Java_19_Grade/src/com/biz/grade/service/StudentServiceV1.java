@@ -11,11 +11,14 @@ import com.biz.grade.utill.StudentIDX;
 
 public class StudentServiceV1 {
 		//key,  value
-	Map<String,StudentVO> stdList;
+	private Map<String,StudentVO> stdList;
 	
 	public StudentServiceV1() {
 		stdList = new TreeMap<String,StudentVO>();
 			
+	}
+	public Map<String,StudentVO> getStdList(){
+		return this.stdList;
 	}
 	public void read(String stdFileName) throws Exception {
 		FileReader fileReader;
@@ -42,6 +45,7 @@ public class StudentServiceV1 {
 		buffer.close();
 		fileReader.close();
 	}//read end
+	
 	public void list() {
 		Set<String> stdNums = stdList.keySet();
 		System.out.println("=====================================================");

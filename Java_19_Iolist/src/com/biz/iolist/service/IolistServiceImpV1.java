@@ -26,6 +26,9 @@ public class IolistServiceImpV1 implements IolistService {
 			if (reader == null)
 				break;
 
+			String[] name = reader.split(":");
+			
+			
 		System.out.println(reader);
 		} // while end
 		buffer.close();

@@ -1,26 +1,26 @@
 package com.biz.sevice;
 
-import java.util.Random;
-
 import com.biz.rev.GradeVO;
 
 public class GradeService {
 
 	public static void main(String[] args) {
-		GradeVO[] gs = new GradeVO[5];
+		GradeVO[] gradeVO = new GradeVO[5];
 		
-		int intKor = 94;
-		int intEng = 55;
-		int intMath = 44;
+	//gradeVO[1].setIntKor(92);
+	//gradeVO[1].setIntEng(87);
+	//gradeVO[1].setIntMath(65);
 		
-		intKor = gs[1].intKor;
-		intEng = gs[1].intEng;
-		intMath = gs[1].intMath;
+		int intKor = 92;
+				gradeVO[1].setIntKor(intKor);
+		int intEng = 87;
+				gradeVO[1].setIntEng(intEng);
+		int intMath = 65;
+				gradeVO[1].setIntMath(intMath);
 		
-		int sum = intKor;
-		sum += intEng;
-		sum += intMath;
-		
+		int sum = gradeVO[1].getIntKor();
+		sum += gradeVO[1].getIntEng();
+		sum += gradeVO[1].getIntMath();
 		
 		System.out.println(sum);
 	}

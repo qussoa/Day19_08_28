@@ -75,7 +75,7 @@ public class BankAccServiceV2 implements BankAccService {
 			intBalance += intInput;
 			bankAccVO.setBalance(intBalance);
 			bankAccVO.setRemark("입금");
-			
+
 			Date date = new Date();
 			SimpleDateFormat sd = new SimpleDateFormat("yyyy-MM-dd");
 			String strDate = sd.format(date);
@@ -89,63 +89,61 @@ public class BankAccServiceV2 implements BankAccService {
 	@Override
 	public void output() throws Exception {
 		this.viewAcc();
-		if(bankAccVO != null) {
+		if (bankAccVO != null) {
 			System.out.print("출금액 : ");
 			String strOutput = scan.nextLine();
 			int intOutput = Integer.valueOf(strOutput);
 			int intBalance = bankAccVO.getBalance();
-			
-			if(intBalance >= intOutput) {
+
+			if (intBalance >= intOutput) {
 				intBalance -= intOutput;
 				bankAccVO.setBalance(intBalance);
 				bankAccVO.setRemark("출금");
-				
+
 				Date date = new Date();
 				SimpleDateFormat sd = new SimpleDateFormat("yyyy-MM-dd");
 				String strDate = sd.format(date);
 				bankAccVO.setDate(strDate);
-			}else {
+			} else {
 				System.out.println("잔액부족 출금불가");
 			}
-					
+
 		}
 	}// output end
-		
+
 	public void bankBookList() {
 		Set<String> keySets = bankList.keySet();
-	
+
 		System.out.println("==============================");
 		System.out.println("계좌\t잔액\t거래일자\t구분");
 		System.out.println("------------------------------");
-		for(String s : keySets) {
-			System.out.print(bankList.get(s).getNum()+"\t");
-			System.out.print(bankList.get(s).getBalance()+"\t");
-			System.out.print(bankList.get(s).getDate()+"\t");
-			System.out.print(bankList.get(s).getRemark()+"\n");
-			
+		for (String s : keySets) {
+			System.out.print(bankList.get(s).getNum() + "\t");
+			System.out.print(bankList.get(s).getBalance() + "\t");
+			System.out.print(bankList.get(s).getDate() + "\t");
+			System.out.print(bankList.get(s).getRemark() + "\n");
+
 		}
 		System.out.println("==============================");
 
 	}
+
 	public void writeAccBook(String strBookFile) {
-	
+
 		Set<String> keySets = bankList.keySet();
 		try {
-		
+
 			fileWriter = new FileWriter(strBookFile);
 			fileOut = new PrintWriter(fileWriter);
-			for(String s : keySets) {
-				fileOut.printf("%s:%d:%s:%s\n",
-						bankList.get(s).getNum(),
-						bankList.get(s).getBalance(),
-						bankList.get(s).getDate(),
-						bankList.get(s).getRemark());
+			for (String s : keySets) {
+				fileOut.printf("%s:%d:%s:%s\n", bankList.get(s).getNum(), bankList.get(s).getBalance(),
+						bankList.get(s).getDate(), bankList.get(s).getRemark());
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		fileOut.close();
-	
+
 	}
 }
